@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <title>GitHub Repository Search</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--HEADER-AND-SEARCH-->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo"><img src="./img/github-mark-white.svg" alt=""></div>
+                <div class="search">
+                    <form class="search__form" id="search-form" novalidate>
+                        <input type="text" name="query" id="query" class="search__query"
+                            placeholder="Введите название репозитория" maxlength="256" required>
+                        <button id="search-btn" class="search__button" type="submit" for="search-form">Поиск</button>
+                    </form>
+                </div>
+                <h1 class="header__title">Поиск репозиториев GitHub</h1>
+            </div>
+        </header>
+        <!--SEARCH-RESULTS-->
+        <main class="main">
+            <section class="repositories">
+                <div class="repositories__container">
+                    <h2 class="repositories__title">Результаты поиска (<span id="count">0</span> найдено, показываются первые 10):</h2>
+                    <ul class="repositories__list">
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__container">
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
