@@ -1,0 +1,49 @@
+.header {
+    padding: 10px 0 10px 0;
+    background-color: $header-bg;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__logo {
+        & img {
+            width: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $header-text;
+    }
+}
+
+.search {
+    &__form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__query {
+        background-color: $body-bg;
+        border: 1px solid $border;
+        border-radius: 3px;
+        height: 2.5rem;
+        width: 300px;
+        padding: 0.25rem;
+        color: $body-text;
+    }
+
+    &__button {
+        background-color: $button-bg;
+        border: 1px solid $border;
+        border-radius: 3px;
+        height: min-content;
+        padding: 0.25rem;
+        font-size: 1.5rem;
+        color: $body-text;
+    }
+}

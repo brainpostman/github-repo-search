@@ -1,0 +1,36 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: $body-bg;
+    color: $body-text;
+    font-family: sans-serif;
+}
+
+[class*="__container"] {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+input,
+button {
+    &:focus {
+        outline: 1px solid $header-text;
+    }
+}
+
+.footer {
+    height: 20px;
+}

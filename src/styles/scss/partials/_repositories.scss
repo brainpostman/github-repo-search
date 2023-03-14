@@ -1,0 +1,68 @@
+.repositories {
+    padding: 20px 0 10px 0;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $body-text;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $border;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__list-item {
+        border-bottom: 1px solid $border;
+        padding-bottom: 1rem;
+        &:last-of-type {
+            border: none;
+        }
+    }
+}
+
+.repository {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    &__title {
+        font-size: 1.8rem;
+        & a {
+            color: $link;
+        }
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+    }
+
+    &__info {
+        font-size: 1.2rem;
+        display: flex;
+        gap: 20px;
+        color: $body-subtext;
+    }
+
+    &__author {
+        & a {
+            color: $link;
+        }
+    }
+
+    &__proglang {
+    }
+
+    &__last-update {
+    }
+}
