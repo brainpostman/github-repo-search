@@ -149,6 +149,7 @@ function buildDateString(date) {
 function displayError(error) {
     let li = document.createElement('li');
     let ul = document.querySelector('.repositories__list');
+    count.textContent = '0';
     li.textContent = error;
     ul.innerHTML = '';
     ul.append(li);
